@@ -21,12 +21,6 @@
 // };
 
 var pivotIndex = function (nums) {
-  //   // 先计算总和
-  //   // 定义左侧总和
-  //   // 遍历数组
-  //     // 如果找到一个数字，左侧总和 = 总和 - 当前数字 - 左侧和
-  //     // 否则左侧和加上当前数字
-
   const total = nums.reduce((a, b) => a + b, 0);
   let leftSum = 0;
   for (let i = 0; i < nums.length; i++) {
