@@ -38,15 +38,5 @@
 //   return pre;
 // }
 
-var reverseList = function (head) {
-  let pre = null, cur = head;
-  while (cur) {
-    const nxt = cur.next;
-    cur.next = pre;
-    pre = cur;
-    cur = nxt;
-  }
-  return pre;
-}
 // 时间复杂度：O(n)\mathcal{O}(n)O(n)，其中 nnn 为链表节点个数。
 // 空间复杂度：O(1)\mathcal{O}(1)O(1)，仅用到若干额外变量。
